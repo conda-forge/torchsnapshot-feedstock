@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/torchsnapshot-{{ version }}.tar.gz
+  - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/torchsnapshot-{{ version }}.tar.gz
     sha256: 618c4947ae500ee8750442fb5dc94f11899be2ddb6b829155c0948460cf94a4f
   - url: https://raw.githubusercontent.com/pytorch/torchsnapshot/main/requirements.txt
     sha256: 277517eab8cf57b752b42f2a62b8fec9cbc8423c49c006f08122e9035cc35a9a
@@ -16,19 +16,19 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - aiofiles
     - aiohttp
     - importlib-metadata
     - nest-asyncio
     - psutil
-    - python >=3.7
+    - python >={{ python_min }}
     - pyyaml
     - pytorch
     - typing-extensions
@@ -40,6 +40,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pytorch/torchsnapshot
