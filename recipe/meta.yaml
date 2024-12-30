@@ -9,7 +9,7 @@ source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/torchsnapshot-{{ version }}.tar.gz
     sha256: 618c4947ae500ee8750442fb5dc94f11899be2ddb6b829155c0948460cf94a4f
   - url: https://raw.githubusercontent.com/pytorch/torchsnapshot/main/requirements.txt
-    sha256: 277517eab8cf57b752b42f2a62b8fec9cbc8423c49c006f08122e9035cc35a9a
+    sha256: 81d8e046ac5f76da49daee7f6973868773205a4744e8886e43b4b5ea85f93bbb
   - url: https://raw.githubusercontent.com/pytorch/torchsnapshot/main/dev-requirements.txt
     sha256: a2d18efa1f120e0406d590b84ae9f6017112d1896d62677044baf9e7239474fe
 
