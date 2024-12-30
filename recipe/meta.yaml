@@ -11,7 +11,7 @@ source:
   - url: https://raw.githubusercontent.com/pytorch/torchsnapshot/main/requirements.txt
     sha256: 81d8e046ac5f76da49daee7f6973868773205a4744e8886e43b4b5ea85f93bbb
   - url: https://raw.githubusercontent.com/pytorch/torchsnapshot/main/dev-requirements.txt
-    sha256: a2d18efa1f120e0406d590b84ae9f6017112d1896d62677044baf9e7239474fe
+    sha256: 74ae1042de1e028ab17730327f3d20d77b47ca2d37a10b37e87438c77c754433
 
 build:
   noarch: python
