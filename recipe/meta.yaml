@@ -33,6 +33,7 @@ requirements:
     - pyyaml
     - pytorch
     - typing-extensions
+    - pyre-extensions
 
 test:
   imports:
